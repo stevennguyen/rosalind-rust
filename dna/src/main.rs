@@ -7,5 +7,5 @@ fn main() {
     let filecontent = fs::read_to_string(filename)
         .expect("Could not read file.");
 
-    println!("{} {} {} {}", filecontent.matches('A').count(), filecontent.matches('C').count() , filecontent.matches('G').count() ,filecontent.matches('T').count());
+    println!("{} {} {} {}", filecontent.matches('A').count(), filecontent.matches('C').count() ,filecontent.matches('G').count(), filecontent.matches('T').count());
 }
