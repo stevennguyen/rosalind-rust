@@ -12,6 +12,7 @@ fn main() {
         pop_born = pop_mature * k;                 // only mature pairs are able to breed, which produce a litter of k pairs
         pop_mature = pop_mature + pop_juvenile;    // the new mature population is the current mature population + previous juvenile population
         pop_juvenile = pop_born;                   // the new juvenile population is the current born population
-        println!("{}", pop_juvenile + pop_mature); // the total population of juvenile + mature pairs
     }
+
+    println!("{}", pop_juvenile + pop_mature);     // the total population of juvenile + mature pairs
 }
